@@ -2255,9 +2255,9 @@ button {
   width: 100%;
 }
 
-.landing-products article.is-wide-product img {
-  aspect-ratio: 16 / 9;
-  object-position: center;
+.landing-products article.is-vertical-product img {
+  aspect-ratio: 4 / 5;
+  object-position: center 88%;
 }
 
 .loop-runbook {
