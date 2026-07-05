@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Depict Agent Controller for e-commerce</title>
+    <meta
+      name="description"
+      content="A visual e-commerce agent controller for connecting providers, setting goals, and coordinating storefront, acquisition, checkout, fulfillment, analytics, and retention rails."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Depict rails home">
+        <span class="brand-mark" aria-hidden="true">D</span>
+        <span>Depict Controller</span>
+      </a>
+      <nav class="top-nav" aria-label="Page sections">
+        <a href="#agent-console">Agent console</a>
+        <a href="#builder">Builder</a>
+        <a href="#login-console">Login Console</a>
+        <a href="#preview">Output preview</a>
+      </nav>
+      <a class="header-action" href="#agent-console">Open controller</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-art"
+          src="assets/commerce-rails-hero.png"
+          alt="A premium e-commerce agent controller with glowing rails, product panels, checkout tiles, shipping routes, and analytics nodes."
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Commerce agent control plane</p>
+          <h1 id="hero-title">
+            <span class="hero-title-line">Depict Agent Controller</span>
+            <span class="hero-title-line">for e-commerce on rails.</span>
+          </h1>
+          <p class="hero-copy">
+            Connect storefront, ads, checkout, fulfillment, analytics, and retention tools. Depict agents coordinate the
+            stack from one operating graph.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#agent-console">Open the controller</a>
+            <a class="secondary-action" href="#builder">Build the rails</a>
+          </div>
+        </div>
+        <dl class="hero-metrics" aria-label="Current blueprint signals">
+          <div>
+            <dt>Controller mode</dt>
+            <dd id="heroLaunch">Goal-directed</dd>
+          </div>
+          <div>
+            <dt>Signal posture</dt>
+            <dd id="heroData">Event-ready</dd>
+          </div>
+          <div>
+            <dt>Customer output</dt>
+            <dd id="heroConversion">Personalized</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="rail-studio" id="builder" aria-labelledby="builder-title">
+        <div class="section-heading">
+          <p class="eyebrow">Rail composer</p>
+          <h2 id="builder-title">Compose the rails the agent controls.</h2>
+          <p>
+            Drop each provider onto its rail and watch the Depict Agent Controller connect the operating graph for
+            storefront, checkout, fulfillment, retention, and conversion data.
+          </p>
+        </div>
+
+        <div class="preset-band" aria-label="Stack presets">
+          <button class="preset is-active" type="button" data-preset="nordic">
+            Nordic fashion
+          </button>
+          <button class="preset" type="button" data-preset="speed">
+            Fast Shopify
+          </button>
+          <button class="preset" type="button" data-preset="enterprise">
+            Enterprise headless
+          </button>
+          <button class="preset" type="button" data-preset="performance">
+            Performance heavy
+          </button>
+        </div>
+
+        <div class="studio-layout graph-layout">
+          <section class="flow-panel" aria-labelledby="flow-title">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Agent control graph</p>
+                <h3 id="flow-title">Commerce rails under one controller</h3>
+              </div>
+              <span class="status-pill" id="stackMode">Balanced growth stack</span>
+            </div>
+            <div class="flow-canvas" id="flowCanvas" aria-label="Selected provider map"></div>
+            <div class="rail-picker" id="railPicker" aria-label="Provider module dock"></div>
+          </section>
+
+          <aside class="insight-panel" aria-label="Stack intelligence">
+            <div class="score-grid">
+              <div class="score-tile">
+                <span>Conversion</span>
+                <strong id="conversionScore">91</strong>
+              </div>
+              <div class="score-tile">
+                <span>Data</span>
+                <strong id="dataScore">88</strong>
+              </div>
+              <div class="score-tile">
+                <span>Launch</span>
+                <strong id="launchScore">82</strong>
+              </div>
+            </div>
+
+            <div class="meter-list" aria-label="Blueprint meters">
+              <div class="meter-row">
+                <span>Setup clarity</span>
+                <div class="meter"><i id="clarityMeter"></i></div>
+              </div>
+              <div class="meter-row">
+                <span>Tracking depth</span>
+                <div class="meter"><i id="trackingMeter"></i></div>
+              </div>
+              <div class="meter-row">
+                <span>Operational load</span>
+                <div class="meter meter-inverse"><i id="loadMeter"></i></div>
+              </div>
+            </div>
+
+            <div class="stack-list" id="stackList" aria-label="Selected stack"></div>
+            <div class="insight-note" id="insightNote"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="agent-admin-section" id="agent-console" aria-labelledby="agent-console-title">
+        <div class="section-heading">
+          <p class="eyebrow">Agent admin panel</p>
+          <h2 id="agent-console-title">One controller for the stack, the goals, and the agents.</h2>
+          <p>
+            Manage provider connections, give the Depict agent business goals, and see the operating plan it would run
+            across acquisition, retention, LTV, checkout, and fulfillment.
+          </p>
+        </div>
+
+        <div class="admin-shell">
+          <aside class="admin-sidebar" aria-label="Admin navigation">
+            <div class="admin-brand">
+              <span>D</span>
+              <div>
+                <strong>Depict</strong>
+                <em>Agent Controller</em>
+              </div>
+            </div>
+            <div class="admin-side-status">
+              <span>Controller mode</span>
+              <strong>Goal-directed</strong>
+              <em>Agents can draft, test, and sync provider actions.</em>
+            </div>
+            <nav class="admin-nav" aria-label="Agent console areas">
+              <a class="is-active" href="#agent-console">Goals</a>
+              <a href="#agent-console">Agents</a>
+              <a href="#agent-console">Providers</a>
+              <a href="#agent-console">Signals</a>
+            </nav>
+            <div class="admin-health">
+              <span>Stack health</span>
+              <strong id="adminHealthScore">91%</strong>
+              <div><i style="width: 91%"></i></div>
+            </div>
+          </aside>
+
+          <section class="admin-main" aria-label="Depict agent goal setup">
+            <div class="admin-topbar">
+              <div>
+                <span>Active workspace</span>
+                <strong id="adminWorkspaceTitle">Nordic fashion launch</strong>
+              </div>
+              <div>
+                <span>Controller status</span>
+                <strong>9 agents online</strong>
+              </div>
+              <div>
+                <span>Provider access</span>
+                <strong>Read/write</strong>
+              </div>
+            </div>
+
+            <div class="goal-panel">
+              <div class="goal-panel-head">
+                <div>
+                  <span>Business objective</span>
+                  <strong id="agentGoalTitle">LTV expansion</strong>
+                </div>
+                <div class="goal-controls" id="agentGoalControls" aria-label="Agent goals">
+                  <button class="is-active" type="button" data-agent-goal="ltv">LTV</button>
+                  <button type="button" data-agent-goal="marketing">Marketing</button>
+                  <button type="button" data-agent-goal="retention">Retention</button>
+                </div>
+              </div>
+              <div class="agent-command-layout">
+                <label class="agent-command">
+                  <span>Instructions for Depict Agent Controller</span>
+                  <textarea id="agentPrompt" rows="4"></textarea>
+                </label>
+                <div class="goal-signal-card" aria-label="Agent decision loop">
+                  <span>Decision loop</span>
+                  <strong>Observe, decide, sync</strong>
+                  <div class="goal-signal-rail">
+                    <span>Signals</span>
+                    <span>Actions</span>
+                    <span>Providers</span>
+                  </div>
+                </div>
+              </div>
+              <div class="agent-actions">
+                <button type="button">Preview plan</button>
+                <button type="button">Save goal</button>
+              </div>
+            </div>
+
+            <div class="agent-work-grid">
+              <section class="agent-plan-panel" aria-labelledby="agent-plan-title">
+                <div class="admin-panel-heading">
+                  <span>Agent plan</span>
+                  <strong id="agent-plan-title">Next best actions</strong>
+                </div>
+                <div class="agent-plan-list" id="agentPlanList"></div>
+              </section>
+
+              <section class="provider-control-panel" aria-labelledby="provider-control-title">
+                <div class="admin-panel-heading">
+                  <span>Connected providers</span>
+                  <strong id="provider-control-title">Live stack controls</strong>
+                </div>
+                <div class="provider-control-grid" id="adminProviderGrid"></div>
+              </section>
+            </div>
+          </section>
+
+          <aside class="admin-insights" aria-label="Agent insights">
+            <div class="admin-panel-heading">
+              <span>Goal telemetry</span>
+              <strong>What the agent watches</strong>
+            </div>
+            <div class="admin-kpi-grid" id="adminKpiGrid"></div>
+            <div class="agent-activity" id="agentActivity"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="login-console-section" id="login-console" aria-labelledby="login-console-title">
+        <div class="section-heading">
+          <p class="eyebrow">Login Console</p>
+          <h2 id="login-console-title">Connect providers once. Let the agent run inside scoped access.</h2>
+          <p>
+            Add OAuth access, API keys, or MCP connector keys for each selected provider. Depict stores credentials in a
+            secure vault, tests the connection, and gives agents only the permissions you approve.
+          </p>
+        </div>
+
+        <div class="login-shell">
+          <aside class="login-sidebar" aria-label="Login console navigation">
+            <div class="login-brand-card">
+              <span>D</span>
+              <div>
+                <strong>Depict Admin</strong>
+                <em>Nordic Atelier workspace</em>
+              </div>
+            </div>
+            <nav class="login-menu" aria-label="Login console sections">
+              <a class="is-active" href="#login-console">Connections</a>
+              <a href="#login-console">Vault</a>
+              <a href="#login-console">Agent access</a>
+              <a href="#login-console">Audit log</a>
+            </nav>
+            <div class="login-secure-card">
+              <span>Security model</span>
+              <strong>No shared passwords</strong>
+              <p>Use OAuth, API keys, webhooks, and MCP tokens with scoped read/write permissions.</p>
+            </div>
+            <div class="connection-progress" aria-label="Connection health">
+              <span>Connection health</span>
+              <strong id="loginHealthScore">7/9</strong>
+              <div><i id="loginHealthBar" style="width: 78%"></i></div>
+            </div>
+          </aside>
+
+          <section class="login-main" aria-label="Provider login setup">
+            <div class="login-topbar">
+              <div>
+                <span>Workspace</span>
+                <strong>Nordic fashion launch</strong>
+              </div>
+              <div>
+                <span>Selected connectors</span>
+                <strong id="loginConnectorCount">9 providers</strong>
+              </div>
+              <div>
+                <span>Auth methods</span>
+                <strong>OAuth / API / MCP</strong>
+              </div>
+            </div>
+
+            <div class="credential-panel">
+              <div class="credential-panel-head">
+                <div>
+                  <span>Add credential</span>
+                  <strong id="loginActiveProvider">Klarna payments</strong>
+                </div>
+                <div class="credential-method-tabs" aria-label="Credential methods">
+                  <button class="is-active" type="button">OAuth</button>
+                  <button type="button">API key</button>
+                  <button type="button">MCP</button>
+                </div>
+              </div>
+              <div class="credential-form-grid">
+                <label>
+                  <span>Provider</span>
+                  <strong id="credentialProviderName">Klarna</strong>
+                </label>
+                <label>
+                  <span>Credential</span>
+                  <input id="loginCredentialValue" aria-label="Credential key" value="sk_live_xxxxxxxxxxxx" readonly />
+                </label>
+                <label>
+                  <span>MCP endpoint</span>
+                  <input id="loginMcpEndpoint" aria-label="MCP endpoint" value="https://mcp.provider.com/commerce" readonly />
+                </label>
+              </div>
+              <div class="credential-actions">
+                <button type="button">Test connection</button>
+                <button type="button">Save secure key</button>
+              </div>
+            </div>
+
+            <section class="connection-list-panel" aria-labelledby="connection-list-title">
+              <div class="admin-panel-heading">
+                <span>Connected stack</span>
+                <strong id="connection-list-title">Provider logins and keys</strong>
+              </div>
+              <div class="connector-list" id="loginConnectorList"></div>
+            </section>
+          </section>
+
+          <aside class="agent-access-panel" aria-label="Agent access controls">
+            <div class="admin-panel-heading">
+              <span>Agent permissions</span>
+              <strong>What the agent can do</strong>
+            </div>
+            <div class="access-scope-list">
+              <article>
+                <span>Read</span>
+                <strong>Catalog, orders, events</strong>
+                <p>Used for recommendations, attribution, and operational context.</p>
+              </article>
+              <article>
+                <span>Write</span>
+                <strong>Draft changes only</strong>
+                <p>Agent can propose campaigns, rules, and mappings before approval.</p>
+              </article>
+              <article>
+                <span>Sync</span>
+                <strong>Approved automations</strong>
+                <p>Saved goals can push tested settings back into connected providers.</p>
+              </article>
+            </div>
+            <div class="login-event-log" id="loginEventLog"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="preview-section" id="preview" aria-labelledby="preview-title">
+        <div class="section-heading">
+          <p class="eyebrow">Agent output preview</p>
+          <h2 id="preview-title">The controller changes the customer experience in real time.</h2>
+          <p>
+            The storefront is one output surface: Depict agents use acquisition, analytics, retention, checkout, and
+            fulfillment signals to rank the catalog and adapt the promise.
+          </p>
+        </div>
+
+        <div class="storefront-shell">
+          <div class="storefront-browser">
+            <div class="browser-bar" aria-hidden="true">
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <strong>nordic-atelier.com</strong>
+              <em>Live preview</em>
+            </div>
+            <div class="storefront">
+              <div class="controller-ribbon" aria-label="Depict Agent Controller signal inputs">
+                <div>
+                  <span>Controlled by</span>
+                  <strong>Depict Agent Controller</strong>
+                </div>
+                <ul>
+                  <li id="controllerSignalAcquisition">Google Ads</li>
+                  <li id="controllerSignalAnalytics">Mixpanel + GA4</li>
+                  <li id="controllerSignalRetention">Klaviyo</li>
+                  <li id="controllerSignalShipping">Ingrid</li>
+                </ul>
+              </div>
+              <div class="store-hero">
+                <div class="store-hero-copy">
+                  <p id="previewPlatform">Depict Agent Controller</p>
+                  <h3>New season, tuned for intent.</h3>
+                </div>
+                <div class="store-hero-products" aria-hidden="true">
+                  <img src="assets/product-atelier-jacket.png" alt="" />
+                  <img src="assets/product-fluid-trouser.png" alt="" />
+                  <img src="assets/product-ribbed-knit.png" alt="" />
+                </div>
+                <button type="button" id="previewPayment">Checkout with Klarna</button>
+              </div>
+              <div class="personalization-console" aria-label="Depict personalized catalog controls">
+                <div class="visitor-context-tabs" id="visitorContextControls" aria-label="Visitor context">
+                  <button class="is-active" type="button" data-visitor-context="paid">
+                    <span>From ads</span>
+                    <strong id="paidContextLabel">Google Ads</strong>
+                  </button>
+                  <button type="button" data-visitor-context="vip">
+                    <span>Returning</span>
+                    <strong id="vipContextLabel">Klaviyo VIP</strong>
+                  </button>
+                  <button type="button" data-visitor-context="delivery">
+                    <span>Delivery intent</span>
+                    <strong id="deliveryContextLabel">Ingrid promise</strong>
+                  </button>
+                </div>
+                <div class="catalog-agent-note">
+                  <span>Depict Agent Controller</span>
+                  <strong id="catalogExperienceTitle">Outerwear-first catalog for paid-search intent</strong>
+                  <p id="catalogExperienceReason">
+                    Google Ads intent and Mixpanel events lift the jacket first, then build a matching set.
+                  </p>
+                </div>
+                <div class="experience-metric-grid" id="experienceMetricGrid"></div>
+              </div>
+              <div class="product-grid" aria-label="Product preview">
+                <article class="product-card" data-product="jacket">
+                  <figure class="product-visual">
+                    <img src="assets/product-atelier-jacket.png" alt="Charcoal atelier jacket" />
+                    <span class="product-priority">01</span>
+                  </figure>
+                  <div class="product-meta">
+                    <div>
+                      <strong>Atelier jacket</strong>
+                      <em id="previewDiscovery">Recommended by Depict</em>
+                    </div>
+                    <span>€420</span>
+                  </div>
+                  <button type="button">Add</button>
+                </article>
+                <article class="product-card" data-product="trouser">
+                  <figure class="product-visual">
+                    <img src="assets/product-fluid-trouser.png" alt="Moss green fluid trouser" />
+                    <span class="product-priority">02</span>
+                  </figure>
+                  <div class="product-meta">
+                    <div>
+                      <strong>Fluid trouser</strong>
+                      <em id="previewData">Tracked in Mixpanel</em>
+                    </div>
+                    <span>€260</span>
+                  </div>
+                  <button type="button">Add</button>
+                </article>
+                <article class="product-card" data-product="knit">
+                  <figure class="product-visual">
+                    <img src="assets/product-ribbed-knit.png" alt="Oat and mist blue ribbed knit sweater" />
+                    <span class="product-priority">03</span>
+                  </figure>
+                  <div class="product-meta">
+                    <div>
+                      <strong>Ribbed knit</strong>
+                      <em id="previewShipping">Ships with Ingrid</em>
+                    </div>
+                    <span>€180</span>
+                  </div>
+                  <button type="button">Add</button>
+                </article>
+              </div>
+              <div class="checkout-strip">
+                <div>
+                  <span>Acquisition</span>
+                  <strong id="previewAd">Google Ads</strong>
+                </div>
+                <div>
+                  <span>Fulfillment</span>
+                  <strong id="previewShip">Ingrid</strong>
+                </div>
+                <div>
+                  <span>Analytics</span>
+                  <strong id="previewAnalytics">Mixpanel + GA4</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-stream" aria-label="Agent decision telemetry">
+            <div class="event-head">
+              <p class="eyebrow">Agent decision telemetry</p>
+              <strong id="eventStack">Mixpanel + controller log</strong>
+            </div>
+            <ol id="eventList"></ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="decision-section" id="decisions" aria-labelledby="decisions-title">
+        <div class="section-heading">
+          <p class="eyebrow">Rails worth deciding</p>
+          <h2 id="decisions-title">The complete build needs more than checkout.</h2>
+        </div>
+        <div class="decision-grid">
+          <article>
+            <span>01</span>
+            <h3>Product truth</h3>
+            <p>PIM, enrichment, feeds, inventory rules, and catalog governance.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Discovery</h3>
+            <p>Search, recommendations, merchandising, bundles, and personalization.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Retention</h3>
+            <p>Email, SMS, loyalty, reviews, referrals, and customer lifecycle triggers.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Trust layer</h3>
+            <p>Fraud prevention, tax, consent, GDPR, chargebacks, and checkout risk.</p>
+          </article>
+          <article>
+            <span>05</span>
+            <h3>Operations</h3>
+            <p>ERP, WMS, returns, support, order routing, and finance reconciliation.</p>
+          </article>
+          <article>
+            <span>06</span>
+            <h3>Experimentation</h3>
+            <p>A/B testing, attribution, server-side events, and growth measurement.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Depict e-commerce on rails.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
