@@ -2255,6 +2255,11 @@ button {
   width: 100%;
 }
 
+.landing-products article.is-wide-product img {
+  aspect-ratio: 16 / 9;
+  object-position: center;
+}
+
 .loop-runbook {
   background: #111215;
   border: 1px solid #292c34;
