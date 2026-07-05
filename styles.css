@@ -2256,7 +2256,6 @@ button {
 }
 
 .landing-products article.is-vertical-product img {
-  aspect-ratio: 4 / 5;
   object-position: center 88%;
 }
 
