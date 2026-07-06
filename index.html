@@ -18,9 +18,9 @@
       </a>
       <nav class="top-nav" aria-label="Page sections">
         <a href="#agent-console">Agent console</a>
+        <a href="#login-console">Login Console</a>
         <a href="#campaign-loop">Campaign loop</a>
         <a href="#builder">Builder</a>
-        <a href="#login-console">Login Console</a>
         <a href="#preview">Output preview</a>
       </nav>
       <a class="header-action" href="#agent-console">Open controller</a>
@@ -256,6 +256,127 @@
         </div>
       </section>
 
+      <section class="login-console-section" id="login-console" aria-labelledby="login-console-title">
+        <div class="section-heading">
+          <p class="eyebrow">Login Console</p>
+          <h2 id="login-console-title">Connect providers once. Let the agent run inside scoped access.</h2>
+          <p>
+            Add OAuth access, API keys, or MCP connector keys for each selected provider. Depict stores credentials in a
+            secure vault, tests the connection, and gives agents only the permissions you approve.
+          </p>
+        </div>
+
+        <div class="login-shell">
+          <aside class="login-sidebar" aria-label="Login console navigation">
+            <div class="login-brand-card">
+              <span>D</span>
+              <div>
+                <strong>Depict Admin</strong>
+                <em>Nordic Atelier workspace</em>
+              </div>
+            </div>
+            <nav class="login-menu" aria-label="Login console sections">
+              <a class="is-active" href="#login-console">Connections</a>
+              <a href="#login-console">Vault</a>
+              <a href="#login-console">Agent access</a>
+              <a href="#login-console">Audit log</a>
+            </nav>
+            <div class="login-secure-card">
+              <span>Security model</span>
+              <strong>No shared passwords</strong>
+              <p>Use OAuth, API keys, webhooks, and MCP tokens with scoped read/write permissions.</p>
+            </div>
+            <div class="connection-progress" aria-label="Connection health">
+              <span>Connection health</span>
+              <strong id="loginHealthScore">7/9</strong>
+              <div><i id="loginHealthBar" style="width: 78%"></i></div>
+            </div>
+          </aside>
+
+          <section class="login-main" aria-label="Provider login setup">
+            <div class="login-topbar">
+              <div>
+                <span>Workspace</span>
+                <strong>Nordic fashion launch</strong>
+              </div>
+              <div>
+                <span>Selected connectors</span>
+                <strong id="loginConnectorCount">9 providers</strong>
+              </div>
+              <div>
+                <span>Auth methods</span>
+                <strong>OAuth / API / MCP</strong>
+              </div>
+            </div>
+
+            <div class="credential-panel">
+              <div class="credential-panel-head">
+                <div>
+                  <span>Add credential</span>
+                  <strong id="loginActiveProvider">Klarna payments</strong>
+                </div>
+                <div class="credential-method-tabs" aria-label="Credential methods">
+                  <button class="is-active" type="button">OAuth</button>
+                  <button type="button">API key</button>
+                  <button type="button">MCP</button>
+                </div>
+              </div>
+              <div class="credential-form-grid">
+                <label>
+                  <span>Provider</span>
+                  <strong id="credentialProviderName">Klarna</strong>
+                </label>
+                <label>
+                  <span>Credential</span>
+                  <input id="loginCredentialValue" aria-label="Credential key" value="sk_live_xxxxxxxxxxxx" readonly />
+                </label>
+                <label>
+                  <span>MCP endpoint</span>
+                  <input id="loginMcpEndpoint" aria-label="MCP endpoint" value="https://mcp.provider.com/commerce" readonly />
+                </label>
+              </div>
+              <div class="credential-actions">
+                <button type="button">Test connection</button>
+                <button type="button">Save secure key</button>
+              </div>
+            </div>
+
+            <section class="connection-list-panel" aria-labelledby="connection-list-title">
+              <div class="admin-panel-heading">
+                <span>Connected stack</span>
+                <strong id="connection-list-title">Provider logins and keys</strong>
+              </div>
+              <div class="connector-list" id="loginConnectorList"></div>
+            </section>
+          </section>
+
+          <aside class="agent-access-panel" aria-label="Agent access controls">
+            <div class="admin-panel-heading">
+              <span>Agent permissions</span>
+              <strong>What the agent can do</strong>
+            </div>
+            <div class="access-scope-list">
+              <article>
+                <span>Read</span>
+                <strong>Catalog, orders, events</strong>
+                <p>Used for recommendations, attribution, and operational context.</p>
+              </article>
+              <article>
+                <span>Write</span>
+                <strong>Draft changes only</strong>
+                <p>Agent can propose campaigns, rules, and mappings before approval.</p>
+              </article>
+              <article>
+                <span>Sync</span>
+                <strong>Approved automations</strong>
+                <p>Saved goals can push tested settings back into connected providers.</p>
+              </article>
+            </div>
+            <div class="login-event-log" id="loginEventLog"></div>
+          </aside>
+        </div>
+      </section>
+
       <section class="campaign-loop-section" id="campaign-loop" aria-labelledby="campaign-loop-title">
         <div class="section-heading">
           <p class="eyebrow">Agent campaign loop</p>
@@ -378,127 +499,6 @@
               <span>Guardrail</span>
               <strong>Agent drafts, human approves spend.</strong>
             </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="login-console-section" id="login-console" aria-labelledby="login-console-title">
-        <div class="section-heading">
-          <p class="eyebrow">Login Console</p>
-          <h2 id="login-console-title">Connect providers once. Let the agent run inside scoped access.</h2>
-          <p>
-            Add OAuth access, API keys, or MCP connector keys for each selected provider. Depict stores credentials in a
-            secure vault, tests the connection, and gives agents only the permissions you approve.
-          </p>
-        </div>
-
-        <div class="login-shell">
-          <aside class="login-sidebar" aria-label="Login console navigation">
-            <div class="login-brand-card">
-              <span>D</span>
-              <div>
-                <strong>Depict Admin</strong>
-                <em>Nordic Atelier workspace</em>
-              </div>
-            </div>
-            <nav class="login-menu" aria-label="Login console sections">
-              <a class="is-active" href="#login-console">Connections</a>
-              <a href="#login-console">Vault</a>
-              <a href="#login-console">Agent access</a>
-              <a href="#login-console">Audit log</a>
-            </nav>
-            <div class="login-secure-card">
-              <span>Security model</span>
-              <strong>No shared passwords</strong>
-              <p>Use OAuth, API keys, webhooks, and MCP tokens with scoped read/write permissions.</p>
-            </div>
-            <div class="connection-progress" aria-label="Connection health">
-              <span>Connection health</span>
-              <strong id="loginHealthScore">7/9</strong>
-              <div><i id="loginHealthBar" style="width: 78%"></i></div>
-            </div>
-          </aside>
-
-          <section class="login-main" aria-label="Provider login setup">
-            <div class="login-topbar">
-              <div>
-                <span>Workspace</span>
-                <strong>Nordic fashion launch</strong>
-              </div>
-              <div>
-                <span>Selected connectors</span>
-                <strong id="loginConnectorCount">9 providers</strong>
-              </div>
-              <div>
-                <span>Auth methods</span>
-                <strong>OAuth / API / MCP</strong>
-              </div>
-            </div>
-
-            <div class="credential-panel">
-              <div class="credential-panel-head">
-                <div>
-                  <span>Add credential</span>
-                  <strong id="loginActiveProvider">Klarna payments</strong>
-                </div>
-                <div class="credential-method-tabs" aria-label="Credential methods">
-                  <button class="is-active" type="button">OAuth</button>
-                  <button type="button">API key</button>
-                  <button type="button">MCP</button>
-                </div>
-              </div>
-              <div class="credential-form-grid">
-                <label>
-                  <span>Provider</span>
-                  <strong id="credentialProviderName">Klarna</strong>
-                </label>
-                <label>
-                  <span>Credential</span>
-                  <input id="loginCredentialValue" aria-label="Credential key" value="sk_live_xxxxxxxxxxxx" readonly />
-                </label>
-                <label>
-                  <span>MCP endpoint</span>
-                  <input id="loginMcpEndpoint" aria-label="MCP endpoint" value="https://mcp.provider.com/commerce" readonly />
-                </label>
-              </div>
-              <div class="credential-actions">
-                <button type="button">Test connection</button>
-                <button type="button">Save secure key</button>
-              </div>
-            </div>
-
-            <section class="connection-list-panel" aria-labelledby="connection-list-title">
-              <div class="admin-panel-heading">
-                <span>Connected stack</span>
-                <strong id="connection-list-title">Provider logins and keys</strong>
-              </div>
-              <div class="connector-list" id="loginConnectorList"></div>
-            </section>
-          </section>
-
-          <aside class="agent-access-panel" aria-label="Agent access controls">
-            <div class="admin-panel-heading">
-              <span>Agent permissions</span>
-              <strong>What the agent can do</strong>
-            </div>
-            <div class="access-scope-list">
-              <article>
-                <span>Read</span>
-                <strong>Catalog, orders, events</strong>
-                <p>Used for recommendations, attribution, and operational context.</p>
-              </article>
-              <article>
-                <span>Write</span>
-                <strong>Draft changes only</strong>
-                <p>Agent can propose campaigns, rules, and mappings before approval.</p>
-              </article>
-              <article>
-                <span>Sync</span>
-                <strong>Approved automations</strong>
-                <p>Saved goals can push tested settings back into connected providers.</p>
-              </article>
-            </div>
-            <div class="login-event-log" id="loginEventLog"></div>
           </aside>
         </div>
       </section>
