@@ -17,8 +17,8 @@
         <span>Depict Controller</span>
       </a>
       <nav class="top-nav" aria-label="Page sections">
-        <a href="#agent-console">Agent console</a>
         <a href="#login-console">Login Console</a>
+        <a href="#agent-console">Agent console</a>
         <a href="#campaign-loop">Campaign loop</a>
         <a href="#builder">Builder</a>
         <a href="#preview">Output preview</a>
@@ -140,122 +140,6 @@
         </div>
       </section>
 
-      <section class="agent-admin-section" id="agent-console" aria-labelledby="agent-console-title">
-        <div class="section-heading">
-          <p class="eyebrow">Agent admin panel</p>
-          <h2 id="agent-console-title">One controller for the stack, the goals, and the agents.</h2>
-          <p>
-            Manage provider connections, give the Depict agent business goals, and see the operating plan it would run
-            across acquisition, retention, LTV, checkout, and fulfillment.
-          </p>
-        </div>
-
-        <div class="admin-shell">
-          <aside class="admin-sidebar" aria-label="Admin navigation">
-            <div class="admin-brand">
-              <span>D</span>
-              <div>
-                <strong>Depict</strong>
-                <em>Agent Controller</em>
-              </div>
-            </div>
-            <div class="admin-side-status">
-              <span>Controller mode</span>
-              <strong>Goal-directed</strong>
-              <em>Agents can draft, test, and sync provider actions.</em>
-            </div>
-            <nav class="admin-nav" aria-label="Agent console areas">
-              <a class="is-active" href="#agent-console">Goals</a>
-              <a href="#agent-console">Agents</a>
-              <a href="#agent-console">Providers</a>
-              <a href="#agent-console">Signals</a>
-            </nav>
-            <div class="admin-health">
-              <span>Stack health</span>
-              <strong id="adminHealthScore">91%</strong>
-              <div><i style="width: 91%"></i></div>
-            </div>
-          </aside>
-
-          <section class="admin-main" aria-label="Depict agent goal setup">
-            <div class="admin-topbar">
-              <div>
-                <span>Active workspace</span>
-                <strong id="adminWorkspaceTitle">Nordic fashion launch</strong>
-              </div>
-              <div>
-                <span>Controller status</span>
-                <strong>9 agents online</strong>
-              </div>
-              <div>
-                <span>Provider access</span>
-                <strong>Read/write</strong>
-              </div>
-            </div>
-
-            <div class="goal-panel">
-              <div class="goal-panel-head">
-                <div>
-                  <span>Business objective</span>
-                  <strong id="agentGoalTitle">LTV expansion</strong>
-                </div>
-                <div class="goal-controls" id="agentGoalControls" aria-label="Agent goals">
-                  <button class="is-active" type="button" data-agent-goal="ltv">LTV</button>
-                  <button type="button" data-agent-goal="marketing">Marketing</button>
-                  <button type="button" data-agent-goal="retention">Retention</button>
-                </div>
-              </div>
-              <div class="agent-command-layout">
-                <label class="agent-command">
-                  <span>Instructions for Depict Agent Controller</span>
-                  <textarea id="agentPrompt" rows="4"></textarea>
-                </label>
-                <div class="goal-signal-card" aria-label="Agent decision loop">
-                  <span>Decision loop</span>
-                  <strong>Observe, decide, sync</strong>
-                  <div class="goal-signal-rail">
-                    <span>Signals</span>
-                    <span>Actions</span>
-                    <span>Providers</span>
-                  </div>
-                </div>
-              </div>
-              <div class="agent-actions">
-                <button type="button">Preview plan</button>
-                <button type="button">Save goal</button>
-              </div>
-            </div>
-
-            <div class="agent-work-grid">
-              <section class="agent-plan-panel" aria-labelledby="agent-plan-title">
-                <div class="admin-panel-heading">
-                  <span>Agent plan</span>
-                  <strong id="agent-plan-title">Next best actions</strong>
-                </div>
-                <div class="agent-plan-list" id="agentPlanList"></div>
-              </section>
-
-              <section class="provider-control-panel" aria-labelledby="provider-control-title">
-                <div class="admin-panel-heading">
-                  <span>Connected providers</span>
-                  <strong id="provider-control-title">Live stack controls</strong>
-                </div>
-                <div class="provider-control-grid" id="adminProviderGrid"></div>
-              </section>
-            </div>
-          </section>
-
-          <aside class="admin-insights" aria-label="Agent insights">
-            <div class="admin-panel-heading">
-              <span>Goal telemetry</span>
-              <strong>What the agent watches</strong>
-            </div>
-            <div class="admin-kpi-grid" id="adminKpiGrid"></div>
-            <div class="agent-activity" id="agentActivity"></div>
-          </aside>
-        </div>
-      </section>
-
       <section class="login-console-section" id="login-console" aria-labelledby="login-console-title">
         <div class="section-heading">
           <p class="eyebrow">Login Console</p>
@@ -373,6 +257,122 @@
               </article>
             </div>
             <div class="login-event-log" id="loginEventLog"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="agent-admin-section" id="agent-console" aria-labelledby="agent-console-title">
+        <div class="section-heading">
+          <p class="eyebrow">Agent admin panel</p>
+          <h2 id="agent-console-title">One controller for the stack, the goals, and the agents.</h2>
+          <p>
+            Manage provider connections, give the Depict agent business goals, and see the operating plan it would run
+            across acquisition, retention, LTV, checkout, and fulfillment.
+          </p>
+        </div>
+
+        <div class="admin-shell">
+          <aside class="admin-sidebar" aria-label="Admin navigation">
+            <div class="admin-brand">
+              <span>D</span>
+              <div>
+                <strong>Depict</strong>
+                <em>Agent Controller</em>
+              </div>
+            </div>
+            <div class="admin-side-status">
+              <span>Controller mode</span>
+              <strong>Goal-directed</strong>
+              <em>Agents can draft, test, and sync provider actions.</em>
+            </div>
+            <nav class="admin-nav" aria-label="Agent console areas">
+              <a class="is-active" href="#agent-console">Goals</a>
+              <a href="#agent-console">Agents</a>
+              <a href="#agent-console">Providers</a>
+              <a href="#agent-console">Signals</a>
+            </nav>
+            <div class="admin-health">
+              <span>Stack health</span>
+              <strong id="adminHealthScore">91%</strong>
+              <div><i style="width: 91%"></i></div>
+            </div>
+          </aside>
+
+          <section class="admin-main" aria-label="Depict agent goal setup">
+            <div class="admin-topbar">
+              <div>
+                <span>Active workspace</span>
+                <strong id="adminWorkspaceTitle">Nordic fashion launch</strong>
+              </div>
+              <div>
+                <span>Controller status</span>
+                <strong>9 agents online</strong>
+              </div>
+              <div>
+                <span>Provider access</span>
+                <strong>Read/write</strong>
+              </div>
+            </div>
+
+            <div class="goal-panel">
+              <div class="goal-panel-head">
+                <div>
+                  <span>Business objective</span>
+                  <strong id="agentGoalTitle">LTV expansion</strong>
+                </div>
+                <div class="goal-controls" id="agentGoalControls" aria-label="Agent goals">
+                  <button class="is-active" type="button" data-agent-goal="ltv">LTV</button>
+                  <button type="button" data-agent-goal="marketing">Marketing</button>
+                  <button type="button" data-agent-goal="retention">Retention</button>
+                </div>
+              </div>
+              <div class="agent-command-layout">
+                <label class="agent-command">
+                  <span>Instructions for Depict Agent Controller</span>
+                  <textarea id="agentPrompt" rows="4"></textarea>
+                </label>
+                <div class="goal-signal-card" aria-label="Agent decision loop">
+                  <span>Decision loop</span>
+                  <strong>Observe, decide, sync</strong>
+                  <div class="goal-signal-rail">
+                    <span>Signals</span>
+                    <span>Actions</span>
+                    <span>Providers</span>
+                  </div>
+                </div>
+              </div>
+              <div class="agent-actions">
+                <button type="button">Preview plan</button>
+                <button type="button">Save goal</button>
+              </div>
+            </div>
+
+            <div class="agent-work-grid">
+              <section class="agent-plan-panel" aria-labelledby="agent-plan-title">
+                <div class="admin-panel-heading">
+                  <span>Agent plan</span>
+                  <strong id="agent-plan-title">Next best actions</strong>
+                </div>
+                <div class="agent-plan-list" id="agentPlanList"></div>
+              </section>
+
+              <section class="provider-control-panel" aria-labelledby="provider-control-title">
+                <div class="admin-panel-heading">
+                  <span>Connected providers</span>
+                  <strong id="provider-control-title">Live stack controls</strong>
+                </div>
+                <div class="provider-control-grid" id="adminProviderGrid"></div>
+              </section>
+            </div>
+          </section>
+
+          <aside class="admin-insights" aria-label="Agent insights">
+            <div class="admin-panel-heading">
+              <span>Goal telemetry</span>
+              <strong>What the agent watches</strong>
+            </div>
+            <div class="admin-kpi-grid" id="adminKpiGrid"></div>
+            <div class="agent-activity" id="agentActivity"></div>
           </aside>
         </div>
       </section>
